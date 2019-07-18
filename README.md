@@ -1,6 +1,8 @@
-# IconeIdentidade
 
-**TODO: Add description**
+
+# IconeIdentidade
+Repository created to learn Elixir using simple concept about the structure
+
 
 ## Installation
 
