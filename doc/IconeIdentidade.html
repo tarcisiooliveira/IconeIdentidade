@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.21.0">
+    <meta name="project" content="icone_identidade v0.1.0">
+    <title>IconeIdentidade — icone_identidade v0.1.0</title>
+    <link rel="stylesheet" href="dist/html-6533ecd75f89a4bc2271.css" />
+    <script src="dist/sidebar_items-10e1f00e1a.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-6533ecd75f89a4bc2271.js"></script>
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="api-reference.html" class="sidebar-projectName">
+icone_identidade      </a>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+        <small class="app-vsn">icone_identidade v0.1.0</small>
+IconeIdentidade      </h1>
+
+
+        <section id="moduledoc">
+<p>Documentation for IconeIdentidade.</p>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#constructor_pixel/1">constructor_pixel(image)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Receive an &#39;Imagem&#39; anda based on &#39;:grid&#39; value, generate start and final pixels position</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_color/1">create_color(image)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Create color who will fill generated image
+  Use to this, 3 first numbers generated of :grid list, use :color to record this</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_table/1">create_table(image)</a>
+  </div>
+    <div class="summary-synopsis"><p>  &#39;create_table&#39; receive an &#39;%IconeIdentidade.Imagem&#39; and create a grid, where will be maped the print screen</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#draw_pixel/1">draw_pixel(imagem)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Generate image joining all previous information</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#hash_input/1">hash_input(input)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Function receve text and past Struct &#39;IconeIdentidade.Imagem&#39; with text buffered at atom :hex in a list after have been md5 coded</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#main/1">main(input)</a>
+  </div>
+    <div class="summary-synopsis"><p>Main function, insert any string to generate a pixel_map refering the text</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#odd_remove/1">odd_remove(image)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Function used to remove grids who has odd value</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#save_image/2">save_image(image, input_inicial)</a>
+  </div>
+    <div class="summary-synopsis"><p>Save the file in project directory using the initial input as name.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#shorter/1">shorter(phrase)</a>
+  </div>
+    <div class="summary-synopsis"><p>  Print the firsts letters in each word in the phrase</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#to_mirror/1">to_mirror(linha)</a>
+  </div>
+    <div class="summary-synopsis"><p>  To mirror two first position in a list to the lestest position in the same list</p></div>
+</div>
+  </div>
+        </section>
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="constructor_pixel/1">
+  <div class="detail-header">
+    <a href="#constructor_pixel/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">constructor_pixel(image)</h1>
+  </div>
+  <section class="docstring">
+<p>  Receive an &#39;Imagem&#39; anda based on &#39;:grid&#39; value, generate start and final pixels position</p>
+<pre><code class="nohighlight makeup elixir"><samp class="c1">##Exemple</samp><samp class="w">
+  </samp><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">constructor_pixel</samp><samp class="p" data-group-id="2420951106-1">(</samp><samp class="p" data-group-id="2420951106-2">%</samp><samp class="nc" data-group-id="2420951106-2">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="2420951106-2">{</samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-3">[</samp><samp class="p" data-group-id="2420951106-4">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">1</samp><samp class="p" data-group-id="2420951106-4">}</samp><samp class="p">,</samp><samp class="p" data-group-id="2420951106-5">{</samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">2</samp><samp class="p" data-group-id="2420951106-5">}</samp><samp class="p">,</samp><samp class="p" data-group-id="2420951106-6">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">3</samp><samp class="p" data-group-id="2420951106-6">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-7">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">5</samp><samp class="p" data-group-id="2420951106-7">}</samp><samp class="p">,</samp><samp class="p" data-group-id="2420951106-8">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">6</samp><samp class="p" data-group-id="2420951106-8">}</samp><samp class="p">,</samp><samp class="p" data-group-id="2420951106-9">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">8</samp><samp class="p" data-group-id="2420951106-9">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-10">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">9</samp><samp class="p" data-group-id="2420951106-10">}</samp><samp class="p">,</samp><samp class="p" data-group-id="2420951106-3">]</samp><samp class="p">,</samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p" data-group-id="2420951106-2">}</samp><samp class="p" data-group-id="2420951106-1">)</samp><samp class="w">
+  </samp><samp class="p" data-group-id="2420951106-11">%</samp><samp class="nc" data-group-id="2420951106-11">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="2420951106-11">{</samp><samp class="w">
+    </samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-12">[</samp><samp class="p" data-group-id="2420951106-13">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">1</samp><samp class="p" data-group-id="2420951106-13">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-14">{</samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">2</samp><samp class="p" data-group-id="2420951106-14">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-15">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">3</samp><samp class="p" data-group-id="2420951106-15">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-16">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">5</samp><samp class="p" data-group-id="2420951106-16">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-17">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">6</samp><samp class="p" data-group-id="2420951106-17">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-18">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">8</samp><samp class="p" data-group-id="2420951106-18">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-19">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">9</samp><samp class="p" data-group-id="2420951106-19">}</samp><samp class="p" data-group-id="2420951106-12">]</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-20">[</samp><samp class="w">
+      </samp><samp class="p" data-group-id="2420951106-21">{</samp><samp class="p" data-group-id="2420951106-22">{</samp><samp class="mi">50</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">0</samp><samp class="p" data-group-id="2420951106-22">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-23">{</samp><samp class="mi">100</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">50</samp><samp class="p" data-group-id="2420951106-23">}</samp><samp class="p" data-group-id="2420951106-21">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="2420951106-24">{</samp><samp class="p" data-group-id="2420951106-25">{</samp><samp class="mi">100</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">0</samp><samp class="p" data-group-id="2420951106-25">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-26">{</samp><samp class="mi">150</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">50</samp><samp class="p" data-group-id="2420951106-26">}</samp><samp class="p" data-group-id="2420951106-24">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="2420951106-27">{</samp><samp class="p" data-group-id="2420951106-28">{</samp><samp class="mi">150</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">0</samp><samp class="p" data-group-id="2420951106-28">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-29">{</samp><samp class="mi">200</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">50</samp><samp class="p" data-group-id="2420951106-29">}</samp><samp class="p" data-group-id="2420951106-27">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="2420951106-30">{</samp><samp class="p" data-group-id="2420951106-31">{</samp><samp class="mi">0</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">50</samp><samp class="p" data-group-id="2420951106-31">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-32">{</samp><samp class="mi">50</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">100</samp><samp class="p" data-group-id="2420951106-32">}</samp><samp class="p" data-group-id="2420951106-30">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="2420951106-33">{</samp><samp class="p" data-group-id="2420951106-34">{</samp><samp class="mi">50</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">50</samp><samp class="p" data-group-id="2420951106-34">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-35">{</samp><samp class="mi">100</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">100</samp><samp class="p" data-group-id="2420951106-35">}</samp><samp class="p" data-group-id="2420951106-33">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="2420951106-36">{</samp><samp class="p" data-group-id="2420951106-37">{</samp><samp class="mi">150</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">50</samp><samp class="p" data-group-id="2420951106-37">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-38">{</samp><samp class="mi">200</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">100</samp><samp class="p" data-group-id="2420951106-38">}</samp><samp class="p" data-group-id="2420951106-36">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="2420951106-39">{</samp><samp class="p" data-group-id="2420951106-40">{</samp><samp class="mi">200</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">50</samp><samp class="p" data-group-id="2420951106-40">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="2420951106-41">{</samp><samp class="mi">250</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">100</samp><samp class="p" data-group-id="2420951106-41">}</samp><samp class="p" data-group-id="2420951106-39">}</samp><samp class="w">
+    </samp><samp class="p" data-group-id="2420951106-20">]</samp><samp class="w">
+  </samp><samp class="p" data-group-id="2420951106-11">}</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="create_color/1">
+  <div class="detail-header">
+    <a href="#create_color/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_color(image)</h1>
+      <div class="specs">
+          <pre>create_color(<a href="IconeIdentidade.Imagem.html#t:t/0">IconeIdentidade.Imagem.t</a>()) :: <a href="IconeIdentidade.Imagem.html#t:t/0">IconeIdentidade.Imagem.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>  Create color who will fill generated image
+  Use to this, 3 first numbers generated of :grid list, use :color to record this</p>
+<pre><code class="nohighlight makeup elixir"><samp class="c1">##Exemple</samp><samp class="w">
+  </samp><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">create_color</samp><samp class="p" data-group-id="4592853164-1">(</samp><samp class="p" data-group-id="4592853164-2">%</samp><samp class="nc" data-group-id="4592853164-2">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="4592853164-2">{</samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="4592853164-3">[</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="mi">195</samp><samp class="p" data-group-id="4592853164-3">]</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p" data-group-id="4592853164-2">}</samp><samp class="p" data-group-id="4592853164-1">)</samp><samp class="w">
+  </samp><samp class="p" data-group-id="4592853164-4">%</samp><samp class="nc" data-group-id="4592853164-4">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="4592853164-4">{</samp><samp class="w">
+    </samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="4592853164-5">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p" data-group-id="4592853164-5">}</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="4592853164-6">[</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="mi">195</samp><samp class="p" data-group-id="4592853164-6">]</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="w">
+  </samp><samp class="p" data-group-id="4592853164-4">}</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="create_table/1">
+  <div class="detail-header">
+    <a href="#create_table/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_table(image)</h1>
+  </div>
+  <section class="docstring">
+<p>  &#39;create_table&#39; receive an &#39;%IconeIdentidade.Imagem&#39; and create a grid, where will be maped the print screen</p>
+<pre><code class="nohighlight makeup elixir"><samp class="c1">##Exemple</samp><samp class="w">
+  </samp><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">create_table</samp><samp class="p" data-group-id="3021931941-1">(</samp><samp class="p" data-group-id="3021931941-2">%</samp><samp class="nc" data-group-id="3021931941-2">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="3021931941-2">{</samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="3021931941-3">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p" data-group-id="3021931941-3">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="3021931941-4">[</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">195</samp><samp class="p" data-group-id="3021931941-4">]</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p" data-group-id="3021931941-2">}</samp><samp class="p" data-group-id="3021931941-1">)</samp><samp class="w">
+  </samp><samp class="p" data-group-id="3021931941-5">%</samp><samp class="nc" data-group-id="3021931941-5">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="3021931941-5">{</samp><samp class="w">
+    </samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="3021931941-6">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p" data-group-id="3021931941-6">}</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="3021931941-7">[</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-8">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">0</samp><samp class="p" data-group-id="3021931941-8">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-9">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">1</samp><samp class="p" data-group-id="3021931941-9">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-10">{</samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">2</samp><samp class="p" data-group-id="3021931941-10">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-11">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">3</samp><samp class="p" data-group-id="3021931941-11">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-12">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">4</samp><samp class="p" data-group-id="3021931941-12">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-13">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">5</samp><samp class="p" data-group-id="3021931941-13">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-14">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">6</samp><samp class="p" data-group-id="3021931941-14">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-15">{</samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">7</samp><samp class="p" data-group-id="3021931941-15">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-16">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">8</samp><samp class="p" data-group-id="3021931941-16">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-17">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">9</samp><samp class="p" data-group-id="3021931941-17">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-18">{</samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">10</samp><samp class="p" data-group-id="3021931941-18">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-19">{</samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">11</samp><samp class="p" data-group-id="3021931941-19">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-20">{</samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">12</samp><samp class="p" data-group-id="3021931941-20">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-21">{</samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">13</samp><samp class="p" data-group-id="3021931941-21">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-22">{</samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">14</samp><samp class="p" data-group-id="3021931941-22">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-23">{</samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">15</samp><samp class="p" data-group-id="3021931941-23">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-24">{</samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">16</samp><samp class="p" data-group-id="3021931941-24">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-25">{</samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">17</samp><samp class="p" data-group-id="3021931941-25">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-26">{</samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">18</samp><samp class="p" data-group-id="3021931941-26">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-27">{</samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">19</samp><samp class="p" data-group-id="3021931941-27">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-28">{</samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">20</samp><samp class="p" data-group-id="3021931941-28">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-29">{</samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">21</samp><samp class="p" data-group-id="3021931941-29">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-30">{</samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">22</samp><samp class="p" data-group-id="3021931941-30">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-31">{</samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">23</samp><samp class="p" data-group-id="3021931941-31">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="3021931941-32">{</samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">24</samp><samp class="p" data-group-id="3021931941-32">}</samp><samp class="w">
+    </samp><samp class="p" data-group-id="3021931941-7">]</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="3021931941-33">[</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="mi">195</samp><samp class="p" data-group-id="3021931941-33">]</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="w">
+  </samp><samp class="p" data-group-id="3021931941-5">}</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="draw_pixel/1">
+  <div class="detail-header">
+    <a href="#draw_pixel/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">draw_pixel(imagem)</h1>
+  </div>
+  <section class="docstring">
+<p>  Generate image joining all previous information</p>
+<pre><code class="nohighlight makeup elixir"><samp class="c1">##Exemple</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="hash_input/1">
+  <div class="detail-header">
+    <a href="#hash_input/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">hash_input(input)</h1>
+  </div>
+  <section class="docstring">
+<p>  Function receve text and past Struct &#39;IconeIdentidade.Imagem&#39; with text buffered at atom :hex in a list after have been md5 coded</p>
+<pre><code class="nohighlight makeup elixir"><samp class="c1">##Exemple</samp><samp class="w">
+  </samp><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">hash_input</samp><samp class="p" data-group-id="2934289862-1">(</samp><samp class="s">&quot;Elixir&quot;</samp><samp class="p" data-group-id="2934289862-1">)</samp><samp class="w">
+  </samp><samp class="p" data-group-id="2934289862-2">%</samp><samp class="nc" data-group-id="2934289862-2">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="2934289862-2">{</samp><samp class="w">
+    </samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="2934289862-3">[</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="mi">195</samp><samp class="p" data-group-id="2934289862-3">]</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="w">
+  </samp><samp class="p" data-group-id="2934289862-2">}</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="main/1">
+  <div class="detail-header">
+    <a href="#main/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">main(input)</h1>
+  </div>
+  <section class="docstring">
+<p>Main function, insert any string to generate a pixel_map refering the text</p>
+<h1>Exemple</h1>
+<pre><code class="nohighlight makeup elixir"><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">main</samp><samp class="p" data-group-id="4932916417-1">(</samp><samp class="s">&quot;Elixir&quot;</samp><samp class="p" data-group-id="4932916417-1">)</samp><samp class="w">
+</samp><samp class="ss">:ok</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="odd_remove/1">
+  <div class="detail-header">
+    <a href="#odd_remove/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">odd_remove(image)</h1>
+  </div>
+  <section class="docstring">
+<p>  Function used to remove grids who has odd value</p>
+<pre><code class="nohighlight makeup elixir"><samp class="c1">##Exemple</samp><samp class="w">
+  </samp><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">odd_remove</samp><samp class="p" data-group-id="0559701230-1">(</samp><samp class="p" data-group-id="0559701230-2">%</samp><samp class="nc" data-group-id="0559701230-2">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="0559701230-2">{</samp><samp class="w"> </samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-3">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p" data-group-id="0559701230-3">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-4">[</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-5">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">0</samp><samp class="p" data-group-id="0559701230-5">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-6">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">1</samp><samp class="p" data-group-id="0559701230-6">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-7">{</samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">2</samp><samp class="p" data-group-id="0559701230-7">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-8">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">3</samp><samp class="p" data-group-id="0559701230-8">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-9">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">4</samp><samp class="p" data-group-id="0559701230-9">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-10">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">5</samp><samp class="p" data-group-id="0559701230-10">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-11">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">6</samp><samp class="p" data-group-id="0559701230-11">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-12">{</samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">7</samp><samp class="p" data-group-id="0559701230-12">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-13">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">8</samp><samp class="p" data-group-id="0559701230-13">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-14">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">9</samp><samp class="p" data-group-id="0559701230-14">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-15">{</samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">10</samp><samp class="p" data-group-id="0559701230-15">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-16">{</samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">11</samp><samp class="p" data-group-id="0559701230-16">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-17">{</samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">12</samp><samp class="p" data-group-id="0559701230-17">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-18">{</samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">13</samp><samp class="p" data-group-id="0559701230-18">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-19">{</samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">14</samp><samp class="p" data-group-id="0559701230-19">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-20">{</samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">15</samp><samp class="p" data-group-id="0559701230-20">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-21">{</samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">16</samp><samp class="p" data-group-id="0559701230-21">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-22">{</samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">17</samp><samp class="p" data-group-id="0559701230-22">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-23">{</samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">18</samp><samp class="p" data-group-id="0559701230-23">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-24">{</samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">19</samp><samp class="p" data-group-id="0559701230-24">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-25">{</samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">20</samp><samp class="p" data-group-id="0559701230-25">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-26">{</samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">21</samp><samp class="p" data-group-id="0559701230-26">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-27">{</samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">22</samp><samp class="p" data-group-id="0559701230-27">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-28">{</samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">23</samp><samp class="p" data-group-id="0559701230-28">}</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-29">{</samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">24</samp><samp class="p" data-group-id="0559701230-29">}</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-4">]</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-30">[</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">195</samp><samp class="p" data-group-id="0559701230-30">]</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-2">}</samp><samp class="p" data-group-id="0559701230-1">)</samp><samp class="w">
+  </samp><samp class="p" data-group-id="0559701230-31">%</samp><samp class="nc" data-group-id="0559701230-31">IconeIdentidade.Imagem</samp><samp class="p" data-group-id="0559701230-31">{</samp><samp class="w">
+    </samp><samp class="ss">color</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-32">{</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p" data-group-id="0559701230-32">}</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">grid</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-33">[</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-34">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">1</samp><samp class="p" data-group-id="0559701230-34">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-35">{</samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">2</samp><samp class="p" data-group-id="0559701230-35">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-36">{</samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">3</samp><samp class="p" data-group-id="0559701230-36">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-37">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">5</samp><samp class="p" data-group-id="0559701230-37">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-38">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">6</samp><samp class="p" data-group-id="0559701230-38">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-39">{</samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">8</samp><samp class="p" data-group-id="0559701230-39">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-40">{</samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">9</samp><samp class="p" data-group-id="0559701230-40">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-41">{</samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">11</samp><samp class="p" data-group-id="0559701230-41">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-42">{</samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">12</samp><samp class="p" data-group-id="0559701230-42">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-43">{</samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">13</samp><samp class="p" data-group-id="0559701230-43">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-44">{</samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">20</samp><samp class="p" data-group-id="0559701230-44">}</samp><samp class="p">,</samp><samp class="w">
+      </samp><samp class="p" data-group-id="0559701230-45">{</samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">24</samp><samp class="p" data-group-id="0559701230-45">}</samp><samp class="w">
+    </samp><samp class="p" data-group-id="0559701230-33">]</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">hex</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="p" data-group-id="0559701230-46">[</samp><samp class="mi">161</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">46</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">176</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">98</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">236</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">169</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">209</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">230</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">198</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">159</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">207</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">139</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">96</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">55</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="mi">135</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="mi">195</samp><samp class="p" data-group-id="0559701230-46">]</samp><samp class="p">,</samp><samp class="w">
+    </samp><samp class="ss">pixel_map</samp><samp class="p">:</samp><samp class="w"> </samp><samp class="no">nil</samp><samp class="w">
+  </samp><samp class="p" data-group-id="0559701230-31">}</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="save_image/2">
+  <div class="detail-header">
+    <a href="#save_image/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">save_image(image, input_inicial)</h1>
+  </div>
+  <section class="docstring">
+<p>Save the file in project directory using the initial input as name.</p>
+  </section>
+</section>
+<section class="detail" id="shorter/1">
+  <div class="detail-header">
+    <a href="#shorter/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">shorter(phrase)</h1>
+  </div>
+  <section class="docstring">
+<p>  Print the firsts letters in each word in the phrase</p>
+<pre><code class="nohighlight makeup elixir"><samp class="w">   </samp><samp class="c1">##Expemple</samp><samp class="w">
+    </samp><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">shorter</samp><samp class="p" data-group-id="4813736735-1">(</samp><samp class="s">&quot;your won phrase with many words&quot;</samp><samp class="p" data-group-id="4813736735-1">)</samp><samp class="w">
+    </samp><samp class="s">&quot;YWPWMW&quot;</samp></code></pre>
+  </section>
+</section>
+<section class="detail" id="to_mirror/1">
+  <div class="detail-header">
+    <a href="#to_mirror/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">to_mirror(linha)</h1>
+  </div>
+  <section class="docstring">
+<p>  To mirror two first position in a list to the lestest position in the same list</p>
+<p>  ##Exemple</p>
+<pre><code class="nohighlight makeup elixir"><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">to_mirror</samp><samp class="p" data-group-id="6749482076-1">(</samp><samp class="p" data-group-id="6749482076-2">[</samp><samp class="mi">1</samp><samp class="p">,</samp><samp class="mi">2</samp><samp class="p">,</samp><samp class="mi">3</samp><samp class="p" data-group-id="6749482076-2">]</samp><samp class="p" data-group-id="6749482076-1">)</samp><samp class="w">
+</samp><samp class="p" data-group-id="6749482076-3">[</samp><samp class="mi">1</samp><samp class="p">,</samp><samp class="mi">2</samp><samp class="p">,</samp><samp class="mi">3</samp><samp class="p">,</samp><samp class="mi">2</samp><samp class="p">,</samp><samp class="mi">1</samp><samp class="p" data-group-id="6749482076-3">]</samp><samp class="w">
+
+</samp><samp class="gp unselectable">iex&gt; </samp><samp class="nc">IconeIdentidade</samp><samp class="o">.</samp><samp class="n">to_mirror</samp><samp class="p" data-group-id="6749482076-4">(</samp><samp class="p" data-group-id="6749482076-5">[</samp><samp class="nc">Pedro</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="nc">Paulo</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="nc">Carlos</samp><samp class="p" data-group-id="6749482076-5">]</samp><samp class="p" data-group-id="6749482076-4">)</samp><samp class="w">
+</samp><samp class="p" data-group-id="6749482076-6">[</samp><samp class="nc">Pedro</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="nc">Paulo</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="nc">Carlos</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="nc">Paulo</samp><samp class="p">,</samp><samp class="w"> </samp><samp class="nc">Pedro</samp><samp class="p" data-group-id="6749482076-6">]</samp></code></pre>
+  </section>
+</section>
+          </div>
+        </section>
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.21.0),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  </body>
+</html>
